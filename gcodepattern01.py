@@ -1,9 +1,9 @@
 # Simple rotating pattern
 #
-# Optional arguments:
-# [1] = angle in degrees (=130)
-# [2] = line count (=40)
-# [3] = line length (=50)
+# arguments:
+#  [1] = angle in degrees (=130)
+#  [2] = line count (=40)
+#  [3] = line length (=50)
 #
 # Usage: python gcodepattern01.py <angle> <count> <length>
 #
@@ -15,14 +15,14 @@ from mecode import GMatrix
 # Useful GCode snippets
 pen_up_gcode = "M8\nG01 X0 Y0 Z3.3"
 pen_down_gcode = "G01 X0 Y0 Z-3.3\nM9"
-start_code = "G91 ;relative\nG21 ;mm\nG92 X0 Y0 Z0 ;reset origin\nF2000;motion speed"
+start_code = "G91 ;relative\nG21 ;mm\nG92 X0 Y0 Z0 ;reset origin\nF2000 ;motion speed"
 end_code = ""
 
 # Extract program parameters, with defaults
 argc = len(sys.argv)
 angle_deg = 130 if argc <= 1 else float(sys.argv[1])
-count = 40 if argc <= 2 else int(sys.argv[2])
-length = 50 if argc <= 3 else float(sys.argv[3])
+count     =  40 if argc <= 2 else   int(sys.argv[2])
+length    =  50 if argc <= 3 else float(sys.argv[3])
 
 # Calculate further working parameters
 offset = length * 1.25
