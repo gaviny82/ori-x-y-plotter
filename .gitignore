@@ -1,0 +1,5 @@
+*.gcode
+*.cyc
+
+__pycache__
+output/*
