@@ -1,0 +1,7 @@
+Pillow
+ortools
+tqdm
+imageio
+scipy
+matplotlib
+svg-to-gcode
