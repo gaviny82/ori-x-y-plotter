@@ -5,3 +5,4 @@ imageio
 scipy
 matplotlib
 svg-to-gcode
+mecode
