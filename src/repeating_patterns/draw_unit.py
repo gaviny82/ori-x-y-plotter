@@ -27,7 +27,7 @@ def draw_unit(g: GMatrix, path: list[list[tuple[float, float]]]) -> None:
     for stroke in path:
         # Move to the first point of the stroke and start drawing
         x0, y0 = stroke[0]
-        g.abs_move(x0, y0)
+        g.abs_move(x0, y0, rapid=True)
         pen_down(g)
 
         # Draw the stroke by moving to each point

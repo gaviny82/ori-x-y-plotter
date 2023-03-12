@@ -52,12 +52,12 @@ def draw_repeating_pattern(
         for x_rep in range(repeat[0]):
             draw_unit(g, path)
             x += width
-            g.abs_move(x, y)
+            g.abs_move(x, y, rapid=True)
 
         # Move to the next row
         x = x_initial
         y += height
-        g.abs_move(x_initial, y)
+        g.abs_move(x_initial, y, rapid=True)
 
     # Set to relative mode
     g.relative()
