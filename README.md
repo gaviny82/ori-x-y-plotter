@@ -22,3 +22,7 @@ SVG:
 TSP Art:
 
 > [matthras/tsp-art-python: Python code for producing your own mathematical art based on weighted voronoi stippling and the travelling salesman problem! (github.com)](https://github.com/matthras/tsp-art-python)
+>
+> [Generating TSP art from a stippled image - Evil Mad Scientist Wiki](https://wiki.evilmadscientist.com/Generating_TSP_art_from_a_stippled_image)
+>
+> [StippleGen - Evil Mad Scientist Wiki](https://wiki.evilmadscientist.com/StippleGen)
