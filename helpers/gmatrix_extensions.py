@@ -1,5 +1,6 @@
 from mecode import GMatrix
 
+
 def pen_down(g: GMatrix) -> None:
     """Lower the pen.
 

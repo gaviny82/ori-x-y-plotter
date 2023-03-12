@@ -2,4 +2,4 @@
 *.cyc
 
 __pycache__
-output/*
+*output/*
